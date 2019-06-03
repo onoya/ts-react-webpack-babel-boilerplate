@@ -1,0 +1,11 @@
+{
+  "name": "react-webpack-typescript",
+  "version": "1.0.0",
+  "description": "React + Webpack + Babel 7 + TypeScript",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["react", "webpack", "babel", "typescript"],
+  "author": "Naoya Ono",
+  "license": "ISC"
+}
