@@ -1,11 +1,45 @@
 {
-  "name": "react-webpack-typescript",
+  "name": "react-webpack-babel-typescript",
   "version": "1.0.0",
   "description": "React + Webpack + Babel 7 + TypeScript",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --mode development --open --hot --config config/webpack.dev.js",
+    "build": "webpack --mode production --config config/webpack.prod.js",
+    "lint": "eslint src --ext .ts,.tsx",
+    "tsc": "tsc --noEmit"
   },
-  "keywords": ["react", "webpack", "babel", "typescript"],
+  "keywords": [
+    "react",
+    "webpack",
+    "babel",
+    "typescript"
+  ],
   "author": "Naoya Ono",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "16.8.19",
+    "@types/react-dom": "16.8.4",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "typescript": "3.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/preset-env": "7.4.5",
+    "@babel/preset-react": "7.0.0",
+    "@babel/preset-typescript": "7.3.3",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "babel-loader": "8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.0.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0",
+    "html-webpack-plugin": "3.2.0",
+    "style-loader": "^0.23.1",
+    "webpack": "4.32.2",
+    "webpack-cli": "3.3.2",
+    "webpack-dev-server": "3.5.1",
+    "webpack-merge": "4.2.1"
+  }
 }
